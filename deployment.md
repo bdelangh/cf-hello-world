@@ -1,0 +1,1 @@
+Command : sudo docker run --rm -v "${PWD}":/project ppiper/cf-cli /bin/bash -c "cf login -u 'bart.delanghe@microsoft.com' -p 'MicroBelg&7' -a 'https://api.cf.us10.hana.ondemand.com' -o '68f6a2bbtrial' -s 'dev' && cd /project && cf push --random-route"
