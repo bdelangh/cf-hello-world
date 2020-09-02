@@ -1,6 +1,7 @@
-# Deployment tp SAP Cloud Platform
+# Deployment to SAP Cloud Platform (SCP)
 
 Deployment in this example is done via Cloud Foundry CLI : `cf push`.\
+There is no MTA descriptor in this case, the manifest.yml defines the application.
 
 ## Direct Deployment from Developer pc
 The application is deployed via ```cf push --random-route```\
