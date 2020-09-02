@@ -11,8 +11,8 @@ Note : cf push needs a manifest.yml to define the application.
 ### Installation of Docker
 * Create new vm to host docker
     * OS : 18.04.LTS
-    * Installation procedure
-        *  https://docs.docker.com/engine/install/ubuntu/
+    * Docker Installation procedure : 
+        * https://docs.docker.com/engine/install/ubuntu/
         * https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04#:~:text=%20How%20To%20Install%20and%20Use%20Docker%20on,of%20passing%20it%20a%20chain%20of...%20More%20
 
 ### Manual test on the Docker vm
@@ -36,11 +36,12 @@ sudo docker run ppiper/cf-cli cf --help
 sudo docker run --rm -v "${PWD}":/project ppiper/cf-cli /bin/bash -c "cf login -u 'user#name' -p 'password' -a 'loginurl' -o 'organization' -s 'space' && cd /project && cf push --random-route"
 ```
 
-This command needs to be executed from the root directory of your development. The command mounts this root directory to the `/project` direcotry within the vm and executes the `cf push`command from there.
+This command needs to be executed from the root directory of your development. The command mounts this root directory to the `/project` directory within the vm and executes the `cf push`command from there.
 
 * Test the application via the SCP generated url
 
 ## Deployment via Azure DevOps and Docker Images
+[]ToDo
 
 <!-- 
 Note : 2 remote repositories
