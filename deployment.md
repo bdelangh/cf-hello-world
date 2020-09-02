@@ -1,6 +1,8 @@
 # Deployment tp SAP Cloud Platform
 
-Deployment in this example if done via cf push.\
+Deployment in this example is done via Cloud Foundry CLI : `cf push`.\
+
+## Direct Deployment from Developer pc
 The application is deployed via ```cf push --random-route```\
 Note : cf push needs a manifest.yml to define the application.
 
