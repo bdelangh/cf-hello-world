@@ -1,4 +1,4 @@
-# Deployment
+# Deployment tp SAP Cloud Platform
 
 Deployment in this example if done via cf push.\
 The application is deployed via ```cf push --random-route```\
@@ -36,3 +36,17 @@ sudo docker run --rm -v "${PWD}":/project ppiper/cf-cli /bin/bash -c "cf login -
 This command needs to be executed from the root directory of your development. The command mounts this root directory to the `/project` direcotry within the vm and executes the `cf push`command from there.
 
 * Test the application via the SCP generated url
+
+## Deployment via Azure DevOps and Docker Images
+
+<!-- 
+Note : 2 remote repositories
+https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes
+
+git remote -v
+git remote add bdlgit https://github.com/bdelangh/cf-hello-world.git
+
+git push bdlgit 1_REST_persist_in_Memory
+git pull bdlgit
+>
+
